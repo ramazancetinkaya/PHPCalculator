@@ -4,32 +4,68 @@ PHP Calculator
 ## Here is an example of how you can use the class:
 
 ```php
-// Create an instance of the Calculator class
+require_once "Calculator.php";
+
+// create an instance of the calculator
 $calculator = new Calculator();
 
-// Perform some calculations
-$result = $calculator->add(5, 3); // $result = 8
-$result = $calculator->subtract(5, 3); // $result = 2
-$result = $calculator->multiply(5, 3); // $result = 15
-$result = $calculator->divide(10, 2); // $result = 5
-$result = $calculator->square(4); // $result = 16
-$result = $calculator->squareRoot(16); // $result = 4
-$result = $calculator->power(2, 3); // $result = 8
-$result = $calculator->mod(10, 3); // $result = 1
-$result = $calculator->sin(90); // $result = 1
-$result = $calculator->cos(90); // $result = 6.123233995736766E-17
-$result = $calculator->tan(90); // $result = 1.633123935319537E16
-$result = $calculator->logarithm(100, 10); // $result = 2
-$result = $calculator->naturalLogarithm(100); // $result = 4.605170185988092
-$result = $calculator->exponent(2); // $result = 7.389056098930649
-$result = $calculator->factorial(5); // $result = 120
+// addition
+$result = $calculator->add(5, 7);
+echo "5 + 7 = $result \n";
 
-// Display the result
-echo $result;
+// subtraction
+$result = $calculator->subtract(10, 3);
+echo "10 - 3 = $result \n";
 
-// Get the result of the previous calculation
-$previousResult = $calculator->getResult();
+// multiplication
+$result = $calculator->multiply(5, 7);
+echo "5 x 7 = $result \n";
 
-// Clear the result
-$calculator->clearResult();
+// division
+$result = $calculator->divide(10, 2);
+echo "10 / 2 = $result \n";
+
+// square
+$result = $calculator->square(5);
+echo "5^2 = $result \n";
+
+// square root
+$result = $calculator->squareRoot(16);
+echo "sqrt(16) = $result \n";
+
+// power
+$result = $calculator->power(5, 3);
+echo "5^3 = $result \n";
+
+// mod
+$result = $calculator->mod(10, 3);
+echo "10 % 3 = $result \n";
+
+// sine
+$result = $calculator->sin(90);
+echo "sin(90) = $result \n";
+
+// cosine
+$result = $calculator->cos(60);
+echo "cos(60) = $result \n";
+
+// tangent
+$result = $calculator->tan(45);
+echo "tan(45) = $result \n";
+
+// logarithm
+$result = $calculator->logarithm(100, 10);
+echo "log(100) base 10 = $result \n";
+
+// natural logarithm
+$result = $calculator->naturalLogarithm(2.71828);
+echo "ln(2.71828) = $result \n";
+
+// exponent
+$result = $calculator->exponent(2.71828);
+echo "e^x = $result \n";
+
+// factorial
+$result = $calculator->factorial(5);
+echo "5! = $result \n";
 ```
