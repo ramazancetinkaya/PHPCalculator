@@ -68,3 +68,13 @@ echo "e^x = $result \n";
 $result = $calculator->factorial(5);
 echo "5! = $result \n";
 ```
+
+### Authors
+
+**Ramazan Çetinkaya**
+
+- [github/ramazancetinkaya](https://github.com/ramazancetinkaya)
+
+### License
+
+Copyright © 2023, [Ramazan Çetinkaya](https://github.com/ramazancetinkaya).
