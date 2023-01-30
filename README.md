@@ -1,5 +1,4 @@
-# PHPCalculator
-PHP Calculator
+# Calculator
 
 ## Here is an example of how you can use the class:
 
